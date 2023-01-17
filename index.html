@@ -24,8 +24,22 @@
 
 		main {
 			width: 90%;
-			max-width: 700px;
+			max-width: 900px;
 			margin: 0 auto;
+			display: flex;
+			gap: 20px;
+		}
+
+		@media screen and (max-width: 980px) {
+           main {
+	           flex-direction: column;
+			   gap: 0px;
+           }
+		}
+
+		h1 {
+			margin-bottom: 0;
+			margin-top: 0;
 		}
 
 		p {
@@ -35,6 +49,7 @@
 
 		a {
 			color: #088bed;
+			text-decoration: none;
 		}
 
 		@media (prefers-color-scheme: dark) {
@@ -57,13 +72,19 @@
 </head>
 <body>
 	<main>
-		<p>Hi! I'm Alok Jain, a front-end developer, freelancer, and philatelist.</p>
+		<div>
+			<img src="alokjain.png" alt="Alok Jain" width="250" height="250" />
+	    </div>
+		<div>
+			<h1>Hey, I'm Alok Jain, </h1>
+		<p>a front-end developer, and philatelist.</p>
 
 		<p>I am based in Chandigarh, India. And specialize in React and WordPress related projects.</p>
 
-		<p>I make websites and web applications that are accessible and provide a pleasant user experience for their users. I do this by writing code that is understandable by search engines with the help of semantics and schema in my code.</p>
+		<p>I make websites and web applications that are accessible and provide a pleasant user experience for their users. I do this by writing code that is understandable by search engines with the help of semantics and schema in my code. And I also love collecting and studying postal stamps.</p>
 
 		<p>You can find out more about me on <a href="https://www.linkedin.com/in/alokjainlucky/" target="_blank">Linkedin</a> and <a href="https://twitter.com/alokjain_dev" target="_blank">Twitter</a>. Or hire me on <a href="https://www.upwork.com/fl/alokjain" target="_blank">Upwork</a> for your next project.</p>
+		</div>
 	</main>
 </body>
 </html>
