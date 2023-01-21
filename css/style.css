@@ -143,6 +143,15 @@ footer .container {
 }
 
 @media screen and (max-width: 576px) {
+    .lets-connect {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .info {
+        padding: 25px 15px 20px;
+    }
+
     .footer-right .social {
         flex-wrap: wrap;
         justify-content: center;
