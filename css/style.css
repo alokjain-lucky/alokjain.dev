@@ -143,11 +143,15 @@ footer .container {
 }
 
 @media screen and (max-width: 576px) {
+    body {
+        padding: 25px 0;
+    }
+    
     .lets-connect {
         top: 15px;
         right: 15px;
     }
-    
+
     .info {
         padding: 25px 15px 20px;
     }
