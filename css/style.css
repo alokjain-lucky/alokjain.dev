@@ -1,13 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    /* height: 100vh; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     display: flex;
     align-items: center;
     line-height: 1.4;
     background-color: #fff;
-    /* color: #333; */
+    color: rgba(255, 255, 255, 0.8);
     padding: 50px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
 }
 
 main {
@@ -28,12 +37,62 @@ main {
     border-radius: 20px;
     padding: 116px 0;
     margin-bottom: 50px;
+    position: relative;
+}
+
+.info p {
+    margin-bottom: 20px;
+}
+
+.info p:last-child {
+    margin-bottom: 0;
+}
+
+.lets-connect {
+    position: absolute;
+    right: 35px;
+    top: 30px;
 }
 
 footer {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #DF8E3D;
     border-radius: 20px;
     padding: 50px 0;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    max-width: 350px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer-left p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-right .social {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social a::after {
+    height: 0;
+}
+
+.social li:last-child {
+    margin-left: 40px;
 }
 
 @media screen and (max-width: 980px) {
@@ -54,13 +113,27 @@ p {
 }
 
 a {
-    color: #088bed;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    display: inline-block;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: width .3s;
+}
+
+a:hover::after {
+    width: 0;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.8);
     }
 }
